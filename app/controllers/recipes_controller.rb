@@ -37,6 +37,7 @@ class RecipesController < ApplicationController
       render :edit
     end
   end
+  
   def destroy
     recipe = Recipe.find(params[:id])
     recipe.destroy
